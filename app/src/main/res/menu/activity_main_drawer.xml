@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/NATIONAL"
+            android:icon="@drawable/ndia"
+            android:title="NATIONAL" />
+        <item
+            android:id="@+id/SPORTS"
+            android:icon="@drawable/ports"
+            android:title="SPORTS" />
+        <item
+            android:id="@+id/WORLD"
+            android:icon="@drawable/orld"
+            android:title="WORLD" />
+        <item
+            android:id="@+id/ENTERTAINMENT"
+            android:icon="@drawable/ntertainment"
+            android:title="ENTERTAINMENT" />
+        <item
+            android:id="@+id/TECHNOLOGY"
+            android:icon="@drawable/echnology"
+            android:title="TECHNOLOGY" />
+        <item
+            android:id="@+id/GEOGRAPHICAL"
+            android:icon="@drawable/eography"
+            android:title="GEOGRAPHICAL" />
+        <item
+            android:id="@+id/FINANCE"
+            android:icon="@drawable/inance"
+            android:title="FINANCE" />
+        <item
+            android:id="@+id/PODCAST"
+            android:icon="@drawable/baseline_volume_up_black_18dp"
+            android:title="PODCAST" />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="anshul5404834.myapplication"
+    android:versionCode="101"
+    android:versionName="1.1">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/news"
+        android:label="Daily Breaking"
+        android:roundIcon="@drawable/news"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".notification"/>
+        <activity
+            android:name=".MainActivity"
+            android:label="Daily Breaking"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter android:icon="@drawable/news">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".national"
+            android:parentActivityName=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="National"
+            android:screenOrientation="portrait">
+            <intent-filter android:icon="@drawable/ndia">
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".sports"
+            android:parentActivityName=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="Sports"
+            android:screenOrientation="portrait">
+            <intent-filter android:icon="@drawable/ports">
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".technical"
+            android:parentActivityName=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="Technical"
+            android:screenOrientation="portrait">
+            <intent-filter android:icon="@drawable/echnology">
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".finance"
+            android:alwaysRetainTaskState="true"
+            android:label="Finance"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter android:icon="@drawable/inance">
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".entertainment"
+            android:parentActivityName=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="Entertainment"
+            android:screenOrientation="portrait">
+            <intent-filter android:icon="@drawable/ntertainment">
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".nature"
+            android:alwaysRetainTaskState="true"
+            android:parentActivityName=".MainActivity"
+            android:label="Geographical"
+            android:screenOrientation="portrait">
+            <intent-filter android:icon="@drawable/eography">
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".world"
+            android:parentActivityName=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="World"
+            android:screenOrientation="portrait">
+            <intent-filter android:icon="@drawable/orld">
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".podcast"
+            android:parentActivityName=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="Podcast"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+
+
+
+        <activity
+            android:name=".search"
+            android:parentActivityName=".MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="Offline"
+            android:screenOrientation="portrait">
+            <intent-filter android:icon="@drawable/orld">
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
